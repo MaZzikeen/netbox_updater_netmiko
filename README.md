@@ -6,7 +6,7 @@ netbox_updater_netmiko is written in Python3.
 
 Clone the project:
 ```
-git clone https://github.com/MaZzikeen/netmiko_updater_napalm
+git clone https://github.com/MaZzikeen/netbox_updater_netmiko
 and then go to ./netbox_updater_netmiko directory
 ```
 
