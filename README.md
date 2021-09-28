@@ -49,7 +49,7 @@ pynetbox library is used to interact with Netbox.
 #### read_from_devices(device_platform, device_ip, device_user, device_password)
 
 netmiko library uses different device_type for connecting to different platforms.
-in the script device_typle is specified based on device_platform.
+in the script device_type is specified based on device_platform.
 ```
 ## NOTE: in this script device_platforms defined as below:
 device_platform 
