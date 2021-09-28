@@ -81,12 +81,12 @@ def read_from_devices(device_platform, device_ip, device_user,
             "password": device_password,
         }
 
-        command = "show version"
+        command = "show version | include nxos"
 
         try:
             with ConnectHandler(**device) as net_connect:
                 output = net_connect.send_command(command)
-                version = re.search('Version(.*)', output).group(1)
+                version = re.search('Version(.*)\n', output).group(1)
             return version
         except NetMikoAuthenticationException as e:
             logging.error('%s: %s', e, device_ip)
