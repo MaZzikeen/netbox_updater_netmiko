@@ -1,5 +1,4 @@
 import re
-import os
 import argparse
 import logging
 import concurrent.futures
